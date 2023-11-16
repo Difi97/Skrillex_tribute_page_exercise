@@ -1,0 +1,169 @@
+/* 
+palette
+#372538 dark purple
+#7526B3 grape
+#5A2F35 wine
+#802B38 wine lighter
+#C75748 mattone/jasper
+*/
+@font-face {
+    font-family: Font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+    src: url();
+}
+
+*{
+    margin: 0;
+    /* padding: 0; */
+    font-family: Bodoni MT;
+}
+html{
+  scroll-behavior: smooth;
+  
+}
+body{
+    display: flex;
+    background-color: #372538 ;
+}
+#title{
+    padding-top: 20px;
+    text-align: center;
+    color: #C75748 ;
+    font-size: 50px;
+    font-weight: 900;
+}
+#sub-title{
+  text-align: center;
+  color: #d36f7e;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+h2{
+  font-family: Bodoni MT;
+  font-weight: 800;
+  margin: 10px 10px;
+  color: #d65f71;
+}
+p{
+    text-align: center;
+    margin-bottom: 15px;
+    color: lightgrey ;
+    letter-spacing: 3px;
+}
+img{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(211, 175, 161, 0.3);
+}
+#img-div{
+    mix-width: 600px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  
+}
+#image{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    opacity: 90%;
+    justify-content: center;
+    align-items: center;
+}
+figure{
+  padding-bottom: 50px;
+}
+.glowing{
+  border: 5px solid;
+  animation: glow;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+#img-caption{
+  color: lightgrey;
+  opacity: 90%;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 10px 0;
+}
+#tribute-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #C75748;
+}
+h2{
+  color: #ffb5c0;
+  margin-top: 25px;
+  text-align: center;
+}
+ul{
+  max-width: 600px;
+  font-family: Bodoni MT;
+}
+
+li > p{
+  transition: 2s;
+  border-radius: 10px;
+  color: #f4d1c3;
+  text-align: left;
+  text-wrap:wrap 
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0;
+  margin: 30px 3px;
+  padding: 10px;
+}
+span{
+  font-weight: 900;
+  color: #372538;
+  transition: 2s;
+}
+#wikiLink{
+  font-size: 20px;
+  color: whitesmoke;
+  letter-spacing: 0;
+  font-weight: 900;
+  padding: 20px;
+}
+a{
+  text-decoration: none;
+  color:#372538;
+  letter-spacing: 1px;
+  transition: 2s;
+  border-bottom: 20px;
+}
+a:hover{
+  color: #d99cdc;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* glowing effect */
+@keyframes glow{
+  from{
+    border-color: #802B38 ;
+  }
+  to{
+    border-color: #D3AFA1;
+  }
+}
+li > p:hover{
+  background-color: #5A2F35;
+}
+li > p:hover > span{
+  color:white;
+}
